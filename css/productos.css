@@ -1,0 +1,42 @@
+
+.productos .card-container{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0 15px;
+    margin: 20px 0;
+    justify-content: center
+}
+
+
+.productos .card-img{
+    width: 200px;
+    height: 200px;
+}
+
+div.card .card-body{
+    padding: 10px;
+}
+
+
+.productos .btn{
+    background-color: rgb(238, 74, 74);
+    color: #ccc;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 790px) {
+    .productos .card-container.card-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .productos .card-body{
+        width: 88% !important;
+    }
+
+}

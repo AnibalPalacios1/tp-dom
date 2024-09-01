@@ -1,0 +1,35 @@
+.galeria-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    justify-content: center
+}
+
+.foto img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    padding: 1px;
+    border-radius: 3px;
+    box-shadow: black 2px 2px 2px 0.2px;
+  
+}
+
+
+@media screen and (max-width: 1550px) {
+   .galeria .galeria-container{
+        flex-wrap: wrap;
+        justify-content: left; 
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .galeria .foto img{
+        width: 88% !important;
+    }
+
+}
